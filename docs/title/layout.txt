@@ -1,0 +1,32 @@
+# The launcher's title screen and the scene behind its pages (ModernGekko's
+# tools/launcher_title_layout.hpp explains every line). Back to front, each
+# picture 2560x1440; positions in its pixels.
+size 2560 1440
+
+# The room, and on it the grids of the ceiling and the floor: their lines go
+# toward the back, one cell every 1.6 seconds, like a treadmill.
+layer room.png zoom 0.35 parallax 0.4
+grid 29 11.3 -1490.7 -251.0 4073.7 -251.0 2444.7 232.0 138.3 232.0 move 1.6 colour 40 170 175 115 width 0.025 fade 1 0
+grid 31 10.8 -2278.0 1559.8 4852.0 1559.8 2639.2 1352.0 -65.2 1352.0 move 1.6 colour 40 170 175 100 width 0.025 fade 1 0
+
+# The green panels: the left one's lines go up, the right one's down, without
+# stopping (a cell every 1.8 seconds; a negative number goes up).
+layer walls.png zoom 0.6 parallax 1
+grid 7 16 -557.2 -487.9 354.7 -147.7 588.3 1633.3 -1100.9 2618.0 move -1.8 colour 77 102 82 255 width 0.035 blend light
+grid 7 16 3059.2 -487.9 2147.3 -147.7 1913.7 1633.3 3602.9 2618.0 move 1.8 colour 77 102 82 255 width 0.035 blend light
+
+# The racers, floating a little on their gear.
+layer characters.png zoom 1 parallax 1.4 bob 0.3 3.4
+layer logo.png zoom 0.3 parallax 0.5 appear 0.6 1
+layer tagline.png zoom 0.3 parallax 0.5 appear 0.75 1
+
+title logo-design.png
+sound press.wav
+
+# The camera after the press: low along the racers' gear from Sonic to Jet,
+# then up and back to the whole picture.
+#   camera <point of the move 0-1> <x 0-1> <y 0-1> <zoom>
+move-seconds 4.2
+camera 0 0.2 0.95 2.6
+camera 0.45 0.72 0.95 2.4
+camera 0.75 0.56 0.6 1.5

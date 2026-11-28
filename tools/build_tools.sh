@@ -137,12 +137,13 @@ if [[ "${1:-}" == "--chassis" ]]; then
         -DMODERNGEKKO_PREVIOUS_USER_DIRECTORY_NAMES="sr-zgs" \
         -DMODERNGEKKO_LAUNCHER_BANNER="$ROOT/docs/SR-Source Artwork.png" \
         -DMODERNGEKKO_LAUNCHER_BANNER_LAYERS="$ROOT/docs/banner" \
+        -DMODERNGEKKO_LAUNCHER_TITLE_SCREEN="$ROOT/docs/title" \
         -DMODERNGEKKO_LAUNCHER_CONTROLLER_ART="$ROOT/docs/SR-Source Controller.png" \
         -DMODERNGEKKO_LAUNCHER_KEYBOARD_ART="$ROOT/docs/SR-Source Keyboard.png" \
         -DMODERNGEKKO_LAUNCHER_MODS_ART="$ROOT/docs/SR-Source Mods.png" \
         -DMODERNGEKKO_LOBBY_ART="" \
         -DMODERNGEKKO_LAUNCHER_BACKGROUND="$ROOT/docs/SR-Source Background.png" \
-        -DMODERNGEKKO_LAUNCHER_MUSIC="$ROOT/docs/SR-Source Launcher Track.mp3" \
+        -DMODERNGEKKO_LAUNCHER_MUSIC="$ROOT/docs/SR-Source Launcher Track.ogg" \
         -DMODERNGEKKO_LOBBY_MUSIC="$ROOT/docs/SR-Source NetworkBattle Track.mp3" \
         -DMODERNGEKKO_LOBBY_BACKGROUND="$ROOT/docs/SR-Source Netplay Background.png" \
         -DMODERNGEKKO_LOBBY_BACKGROUND_LAYERS="$ROOT/docs/lobby" \
